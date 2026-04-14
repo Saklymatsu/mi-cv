@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f1419;
+            color: white;
+        }
+
+        header {
+            background-color: #6e3a52;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-section img {
+            width: 180px;
+            border-radius: 15px;
+        }
+
+        .info h1 {
+            font-size: 26px;
+        }
+
+        .info h2 {
+            color: #ff79c6;
+            margin: 10px 0;
+        }
+
+        .info p {
+            color: #ccc;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #5a001f;
+            padding: 20px;
+            border-radius: 15px;
+            width: 260px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .card p, .card li {
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        ul {
+            padding-left: 15px;
+        }
+
+        /* HERRAMIENTAS CON ICONOS */
+        .tools {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tools li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .tools img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .languages {
+            width: 100%;
+            max-width: 850px;
+            background-color: #4b0d4b;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .top-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="CV.html">Inicio</a>
+            <a href="sobre-mi.html">Acerca de mí</a>
+            <a href="portafolio.html">Portafolio</a>
+        </nav>
+    </header>
+
+    <div class="top-section">
+        <img src="img/yo.jpeg" alt="Mi foto">
+
+        <div class="info">
+            <h1>Brian de la Cruz García López</h1>
+            <h2>Ingeniería en Diseño Multimedia</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Experiencia</h3>
+            <p>
+                Creación de contenido publicitario<br>
+                Creación de modelados 3D<br>
+                Comisiones de arte
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cursos</h3>
+            <ul>
+                <li>Curso de inglés certificado por Cambridge</li>
+            </ul>
+        </div>
+
+        <!-- HERRAMIENTAS CON LOGOS -->
+        <div class="card">
+            <h3>Herramientas</h3>
+            <ul class="tools">
+                <li><img src="img/canva.webp"> Canva</li>
+                <li><img src="img/capcut.webp"> Capcut</li>
+                <li><img src="img/figma.webp"> Figma</li>
+                <li><img src="img/blender.webp"> Blender</li>
+                <li><img src="img/office.webp"> Paquetería Office</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Información Personal</h3>
+            <p>📞 Teléfono: 000000000</p>
+            <p>📧 Correo: saklybrian@gmail.com</p>
+            <p>📍 Ubicación: Ciudad del Carmen, Campeche, México</p>
+        </div>
+
+        <div class="card languages">
+            <h3>Idiomas</h3>
+            <p>Inglés B2</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #5a001f;
+            color: white;
+        }
+
+        /* NAVBAR */
+        header {
+            background-color: #6e3a52;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* CONTENEDOR */
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* espacio entre tarjetas */
+            padding: 60px 20px;
+            flex-wrap: wrap;
+        }
+
+        /* TARJETAS */
+        .card-link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            width: 220px;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background-color: #ff4f87;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+    <header>
+        <nav>
+            <a href="CV.html">Inicio</a>
+            <a href="sobre-mi.html">Acerca de mí</a>
+            <a href="portafolio.html">Portafolio</a>
+         
+        </nav>
+    </header>
+
+    <!-- PORTAFOLIO -->
+    <div class="portfolio-container">
+
+        <!-- TARJETA 1 -->
+        <a href="modelado3d.html" class="card-link">
+            <div class="card">
+                <div class="icon">🧊</div>
+                <h3>Modelado 3D</h3>
+                <p>En esta sección encontrarás todos mis proyectos 3D</p>
+            </div>
+        </a>
+
+        <!-- TARJETA 2 -->
+        <a href="diseno.html" class="card-link">
+            <div class="card">
+                <div class="icon">✏️</div>
+                <h3>Diseño gráfico</h3>
+                <p>En esta sección encontrarás mis diseños</p>
+            </div>
+        </a>
+
+        <!-- TARJETA 3 -->
+        <a href="ilustraciones.html" class="card-link">
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Ilustraciones</h3>
+                <p>En esta sección encontrarás mis ilustraciones</p>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>

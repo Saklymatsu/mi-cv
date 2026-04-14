@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Brian</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #5a001f;
+            color: white;
+        }
+
+        /* NAVBAR */
+        header {
+            background-color: #6e3a52;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb3c6;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            height: 90vh;
+            padding: 20px;
+        }
+
+        /* IMAGEN */
+        .image img {
+            width: 280px;
+            border-radius: 20px;
+        }
+
+        /* TARJETA */
+        .card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            color: #ff79c6;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6e3a52;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff79c6;
+        }
+
+        /* RESPONSIVE (para celular) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+            }
+
+            .image img {
+                width: 200px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Acerca de mí</a>
+            <a href="portafolio.html">Portafolio</a>
+            
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container">
+
+        <!-- IMAGEN -->
+        <div class="image">
+            <img src="img/yo.jpeg" alt="Mi foto">
+        </div>
+
+        <!-- TARJETA -->
+        <div class="card">
+            <h1>Hola, soy Brian García</h1>
+            <h2>Estudiante de Ingeniería en Diseño Multimedia</h2>
+            <p>
+                Me apasiona todo lo relacionado a los videojuegos, la música y el arte animado.
+Soy una persona un tanto reservada pero con mucha pasión por lo que me gusta.
+Aunque no he participado mucho en proyectos externos a la escuela, espero poder hacerlo en algún momento.
+            </p>
+            <a href="sobre-mi.html" class="btn">CONTACTO</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
